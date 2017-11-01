@@ -23,7 +23,11 @@ export class HomePage {
 	private todoService: TodoService
   ) {
   	this.selectedItem = navParams.get('Item');
-  	this.items = todoService.getAll();
+    
+  	todoService.getAll().then((todos) => {
+      this.items = todos;
+    });
+
   	
   }
 
