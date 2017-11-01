@@ -33,12 +33,12 @@ export class AddTodoPage {
       }
     );
 
-    this.showSuccesMessage();
+    this.showSuccessMessage();
     this.navCtrl.push(HomePage);
 
   }
 
-  public showSuccesMessage() {
+  public showSuccessMessage() {
     this.alertController.create({
       title: 'Success',
       subTitle: 'You have created todo',
