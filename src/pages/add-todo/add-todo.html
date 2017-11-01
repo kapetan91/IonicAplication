@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add Todo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<ion-label>Title</ion-label>
+			<ion-input [(ngModel)]="title" type="text" placeholder="Title"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>End Date</ion-label>
+			<ion-input [(ngModel)]="date" type="date" placeholder="End date"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>End Time</ion-label>
+			<ion-input [(ngModel)]="time" type="time" placeholder="End time"></ion-input>
+		</ion-item>
+		<ion-item>
+			<button ion-button (click)="addTodo()">Add todo</button>
+		</ion-item>
+	</ion-list>
+</ion-content>
